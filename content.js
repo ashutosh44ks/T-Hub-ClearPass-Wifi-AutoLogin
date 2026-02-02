@@ -1,8 +1,4 @@
-const credentials = {
-  email: "",
-  password: ""
-};
-
+// config.js is loaded first in manifest, so credentials object is available globally
 const emailValue = credentials.email;
 const passwordValue = credentials.password;
 
