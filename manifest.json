@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "ClearPass Auto Login",
+  "version": "0.0.1",
+  "description": "Autofills ClearPass login on https://clearpass.t-hub.co/.",
+  "host_permissions": ["https://clearpass.t-hub.co/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://clearpass.t-hub.co/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
